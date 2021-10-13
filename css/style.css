@@ -59,11 +59,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 body {
   background-color: #151515;
 }
+
+/* Start styles for header */
 .header {
+  height: 100vh;
   background: url(../img/sigma.png) no-repeat right top;
   background-size: contain;
 }
@@ -71,23 +73,51 @@ body {
   max-width: 1067px;
   margin: 0 auto;
 }
-
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
+  justify-content: space-between;
 }
-
+.header__logo {
+  display: flex;
+  flex-wrap: wrap;
+}
 .header__logo-pic {
   margin-right: 15px;
   width: 34px;
 }
 
 .head__title {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  margin-top: 2.5px;
   color: #f5f5f5;
+}
+.lang__selector {
+  margin-top: 2.5px;
+}
+.lang__selector a {
+  float: right;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.eng {
+  margin-right: 30px;
+}
+
+.ru:focus,
+.ru:active {
+  font-weight: 700;
+}
+
+.eng:focus,
+.eng:active {
+  font-weight: 700;
 }
 
 .main__title {
@@ -108,7 +138,47 @@ body {
   color: #b0adad;
   padding-bottom: 150px;
 }
+/*End styles for header */
 
-.skills {
-  background-color: #f5f5f5;
+/* Start styles for section of skills*/
+.skills__title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+  color: #f5f5f5;
+  margin-top: 150px;
 }
+.possibilities {
+  margin-top: 100px;
+}
+.first__text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.second__text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.third__text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__text {
+  width: 57%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.line {
+  width: 70px;
+  height: 1px;
+  border: 1px solid #b0adad;
+  margin: auto 0;
+  margin-right: 38px;
+}
+/* End styles for section of skills*/
