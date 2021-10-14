@@ -78,7 +78,7 @@ a:focus {
 .section__title {
   text-align: center;
   font-weight: 900;
-  font-size: 56px;
+  font-size: 40px;
   line-height: 64px;
   color: #f5f5f5;
   margin-top: 150px;
@@ -154,7 +154,7 @@ a:focus {
 .main__title {
   max-width: 470px;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 64px;
   color: #f5f5f5;
   margin-top: 166px;
@@ -202,9 +202,9 @@ a:focus {
 .skills__text {
   width: 57%;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 28px;
-  color: #ffffff;
+  color: #b0adad;
 }
 
 .line {
@@ -249,15 +249,16 @@ a:focus {
 .reasons__card img {
   display: block;
   margin: 0 auto;
+  height: 80px;
   margin-top: 27px;
 }
 
 .reasons__card p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 19px;
   text-align: center;
   margin-top: 50px;
-  color: #ffffff;
+  color: #b0adad;
 }
 
 /* End styles for section of reasons */
@@ -301,7 +302,7 @@ a:focus {
   font-size: 30px;
   line-height: 38px;
   width: 60%;
-  color: #ffffff;
+  color: #b0adad;
 }
 /* End styles for section of download */
 
