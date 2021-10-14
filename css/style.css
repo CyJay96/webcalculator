@@ -50,8 +50,6 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Lato";
-  font-style: normal;
 }
 
 *,
@@ -77,8 +75,20 @@ a:focus {
   color: #ffffff;
 }
 
+.section__title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 64px;
+  color: #f5f5f5;
+  margin-top: 150px;
+  margin-bottom: 105px;
+}
+
 /* Start styles for header */
 .header {
+  font-family: "Lato";
+  font-style: normal;
   height: 100vh;
   background: url(../img/sigma.png) no-repeat right top;
   background-size: contain;
@@ -142,7 +152,7 @@ a:focus {
 }
 
 .main__title {
-  max-width: 250px;
+  max-width: 470px;
   font-weight: 900;
   font-size: 64px;
   line-height: 64px;
@@ -162,13 +172,9 @@ a:focus {
 /* End styles for header */
 
 /* Start styles for section of skills */
-.skills__title {
-  text-align: center;
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 64px;
-  color: #f5f5f5;
-  margin-top: 150px;
+.skills {
+  font-family: "Lato";
+  font-style: normal;
 }
 
 .possibilities {
@@ -211,17 +217,11 @@ a:focus {
 /* End styles for section of skills */
 
 /* Start styles for section of reasons */
-.reasons__title {
-  text-align: center;
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 64px;
-  color: #f5f5f5;
-  margin-top: 150px;
-  margin-bottom: 105px;
+.reasons {
+  font-family: "Lato";
+  font-style: normal;
 }
-.reasons__cards {
-}
+
 .reasons__card {
   width: 230px;
   height: 220px;
@@ -229,12 +229,14 @@ a:focus {
   box-sizing: border-box;
   border-radius: 7px;
 }
+
 .rc__first-raw {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 190px;
 }
+
 .rc__second-raw {
   max-width: 650px;
   margin: 0 auto;
@@ -243,11 +245,13 @@ a:focus {
   justify-content: space-between;
   margin-bottom: 190px;
 }
+
 .reasons__card img {
   display: block;
   margin: 0 auto;
   margin-top: 27px;
 }
+
 .reasons__card p {
   font-size: 15px;
   line-height: 19px;
@@ -258,8 +262,53 @@ a:focus {
 
 /* End styles for section of reasons */
 
+/* Start styles for section of download */
+.download {
+  font-family: "Lato";
+  font-style: normal;
+}
+
+.download__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 190px;
+}
+
+.download__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 409px;
+  height: 116px;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.download__button img {
+  display: block;
+  margin: auto 0;
+  margin-left: 47px;
+  width: 45px;
+  height: 45px;
+}
+
+.download__button p {
+  display: block;
+  margin: auto 0;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 38px;
+  width: 60%;
+  color: #ffffff;
+}
+/* End styles for section of download */
+
 /* Start styles for footer */
 .footer {
+  font-family: "Lato";
+  font-style: normal;
   height: 390px;
   background: url(../img/footer_vector.png) no-repeat top,
     rgba(196, 196, 196, 0.043);
@@ -313,6 +362,11 @@ a:focus {
   padding-top: 103px;
   padding-left: 6px;
   width: 12%;
+}
+
+.footer__vk-pic {
+  width: 40px;
+  height: 23px;
 }
 
 .footer__rights {
