@@ -1,53 +1,3 @@
-/* lato-regular - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato-v20-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/lato-v20-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v20-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v20-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v20-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v20-latin-regular.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-/* lato-700 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/lato-v20-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/lato-v20-latin-700.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v20-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v20-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v20-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v20-latin-700.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-/* lato-900 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/lato-v20-latin-900.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/lato-v20-latin-900.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v20-latin-900.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v20-latin-900.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v20-latin-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v20-latin-900.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-
 html {
   box-sizing: border-box;
 }
@@ -77,22 +27,22 @@ a:focus {
 
 .section__title {
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 40px;
   line-height: 64px;
   color: #f5f5f5;
   margin-top: 150px;
   margin-bottom: 105px;
 }
+
 .wrapper {
-  /* max-width: 1067px; */
-  max-width: 85%;
+  max-width: 75%;
   margin: 0 auto;
 }
+
 /* Start styles for header */
 .header {
-  font-family: "Lato";
-  font-style: normal;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   background: url(../img/sigma.png) no-repeat right top;
   background-size: contain;
@@ -124,6 +74,7 @@ a:focus {
 }
 
 .lang__selector {
+  font-weight: 400;
   margin: auto 0;
 }
 
@@ -136,7 +87,7 @@ a:focus {
   line-height: 28px;
 }
 
-.eng {
+.en {
   margin-right: 30px;
 }
 
@@ -145,14 +96,14 @@ a:focus {
   font-weight: 700;
 }
 
-.eng:focus,
-.eng:active {
+.en:focus,
+.en:active {
   font-weight: 700;
 }
 
 .main__title {
-  max-width: 400px;
-  font-weight: 900;
+  max-width: 500px;
+  font-weight: 600;
   font-size: 60px;
   line-height: 64px;
   color: #f5f5f5;
@@ -161,7 +112,7 @@ a:focus {
 }
 
 .description {
-  max-width: 360px;
+  max-width: 450px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -172,7 +123,7 @@ a:focus {
 
 /* Start styles for section of skills */
 .skills {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 
@@ -199,7 +150,7 @@ a:focus {
 }
 
 .skills__text {
-  width: 57%;
+  width: 65%;
   font-weight: 400;
   font-size: 21px;
   line-height: 28px;
@@ -217,7 +168,7 @@ a:focus {
 
 /* Start styles for section of reasons */
 .reasons {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 
@@ -253,10 +204,11 @@ a:focus {
 }
 
 .reasons__card p {
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 19px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 45px;
   color: #b0adad;
 }
 
@@ -264,23 +216,25 @@ a:focus {
 
 /* Start styles for section of download */
 .download {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 
 .download__buttons {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 190px;
+  width: 85%;
 }
 
 .download__button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 409px;
-  height: 116px;
+  width: 380px;
+  height: 107px;
   border: 1px solid #f5f5f5;
   box-sizing: border-box;
   border-radius: 7px;
@@ -297,8 +251,9 @@ a:focus {
 .download__button p {
   display: block;
   margin: auto 0;
-  font-size: 30px;
-  line-height: 38px;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 36px;
   width: 60%;
   color: #b0adad;
 }
@@ -306,9 +261,9 @@ a:focus {
 
 /* Start styles for footer */
 .footer {
-  font-family: "Lato";
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  height: 390px;
+  height: 330px;
   background: url(../img/footer_vector.png) no-repeat top,
     rgba(196, 196, 196, 0.043);
   box-shadow: inset 66.4333px -66.4333px 66.4333px rgba(149, 149, 149, 0.043),
@@ -319,7 +274,7 @@ a:focus {
 .footer__logo {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .footer__logo-pic {
@@ -327,6 +282,7 @@ a:focus {
 }
 
 .footer__title {
+  font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   margin: auto 0;
@@ -338,7 +294,8 @@ a:focus {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 35px;
+  font-weight: 400;
   font-size: 24px;
   line-height: 31px;
 }
@@ -350,7 +307,7 @@ a:focus {
 .footer__contacts {
   display: flex;
   justify-content: space-between;
-  margin-top: 103px;
+  margin-top: 90px;
   width: 12%;
 }
 
@@ -361,7 +318,7 @@ a:focus {
 
 .footer__rights {
   color: #b0adad;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   margin-top: 7px;
@@ -372,41 +329,50 @@ a:focus {
 /* Media queries start */
 @media (max-width: 575px) {
   .wrapper {
-    max-width: 90%;
+    max-width: 80%;
   }
+
   .section__title {
     margin-top: 0px;
     margin-bottom: 50px;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
   }
+
   /* Start styles for header */
   .header {
     height: 500px;
   }
+
   .header__wrapper {
     padding-top: 10px;
   }
+
   .header__logo-pic {
     margin-right: 10px;
   }
+
   .head__title {
     font-size: 16px;
     line-height: 16px;
   }
+
   .lang__selector a {
     font-size: 16px;
     line-height: 16px;
   }
-  .eng {
+
+  .en {
     margin-right: 20px;
   }
+
   .main__title {
     max-width: 240px;
     font-size: 36px;
     line-height: 40px;
     margin-top: 90px;
   }
+
   .description {
     max-width: 260px;
     font-size: 19px;
@@ -421,24 +387,41 @@ a:focus {
   }
 
   .skills__text {
+    width: 57%;
     font-size: 18px;
     line-height: 26px;
   }
   /* End styles for section of skills */
 
   /* Start styles for section of reasons */
+
   .reasons__card {
+    width: 210px;
+    height: 200px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
   .rc__first-raw {
     margin-bottom: 0px;
   }
+
   .rc__first-raw:last-child {
     margin-bottom: 0px;
   }
+
   .rc__second-raw {
     margin-bottom: 30px;
+  }
+
+  .reasons__card img {
+    height: 70px;
+  }
+
+  .reasons__card p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 40px;
   }
   /* End styles for section of reasons */
 
@@ -446,49 +429,70 @@ a:focus {
   .download__buttons {
     margin-bottom: 50px;
   }
+
   .download__button {
+    width: 350px;
+    height: 85px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .download__button p {
-    font-size: 26px;
-    line-height: 26px;
+
+  .download__button img {
+    display: block;
+    margin: auto 0;
+    margin-left: 47px;
+    width: 40px;
+    height: 40px;
   }
+
+  .download__button p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   /* End styles for section of download */
 
   /* Start styles for footer */
   .footer {
     height: 330px;
   }
+
   .footer__logo {
     padding-top: 30px;
   }
+
   .footer__logo-pic {
     width: 56px;
   }
+
   .footer__title {
     font-size: 20px;
     line-height: 28px;
     margin-left: 16px;
   }
+
   .footer__menu {
     justify-content: stretch;
     width: 100%;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 17px;
   }
+
   .footer__menu a {
     max-width: 100px;
     margin-right: 25px;
   }
+
   .footer__contacts {
     margin-top: 50px;
     margin-bottom: 40px;
     width: 12%;
   }
+
   .footer__vk-pic {
     margin-right: 10px;
   }
+
   .footer__rights {
     margin: 0;
   }
